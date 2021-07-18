@@ -73,3 +73,72 @@ span{
 .logo{
     height:77px
 }
+
+
+.rules-btn{
+    position:absolute;
+    bottom: 30px;
+    right: 30px;
+    background:transparent;
+    color: #fff;
+    width:100px;
+    letter-spacing: 2px;
+    padding:.5rem;
+    border: 2px solid hsl(217, 16%, 45%);
+    border-radius:8px;
+    cursor:pointer;
+
+}
+
+.rules-btn:hover{
+    background: hsl(217, 16%, 50%);
+}
+
+.modal-layer{
+    width:100%;
+    position: absolute;
+    height:calc(100vh + 2.5rem );
+    opacity: 0.8;
+    top: -2.5rem;
+    background:  hsl(234, 100%, 2%);
+    z-index: 4;
+}
+
+.rules-modal{
+    position: absolute;
+    display: block;
+    padding:2em;
+    border-radius: 5px;
+    z-index: 6;
+    color: hsl(229, 25%, 31%);
+    background:#fff;
+    margin: 5% auto;
+    
+}
+
+.rules-modal > img{
+    width:270px;
+    height:300px;
+}
+
+.close-icon{
+    position: absolute;
+    text-align: center;
+    right: 20px;
+    width:40px;
+    height:30px;
+    display:block;
+    cursor: pointer;
+    border: none;
+    background: transparent url("../images/icon-close.svg") no-repeat center;
+}
+
+
+
+.close-icon:hover{
+    transform:scale(1.2);
+}
+
+.none{
+    display: none;
+}
