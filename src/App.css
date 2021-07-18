@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
+
+*{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home{
+    background: radial-gradient( hsl(214, 47%, 23%) , hsl(237, 49%, 15%));
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:2.5rem;
+}
+
+.score-section{
+    width: 500px;
+    height: 130px;
+    border-radius:8px;
+    border: 2px solid hsl(217, 16%, 45%);
+}   
+
+.game-section{
+    width: 250px;
+    height: 230px;
+    margin-top: 8rem;
+    background:url(../images/bg-pentagon.svg) center no-repeat;
+    background-size: 230px 230px;
+}
+
