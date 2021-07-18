@@ -1,34 +1,65 @@
-.ButtonIcon{
-    background:radial-gradient(hsl(39, 89%, 49%) , hsl(40, 84%, 53%)) ;
-    position: relative;
-    border-radius:50%;
-    width:100px;
-    height:100px;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    box-shadow: 0px 2px 1px 2px rgb(218, 121, 42);
- 
-
-
+.ButtonIcon {
+  position: absolute;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
-.ButtonIcon::before{
-    position: absolute;
-    content:"";
-    display:block;
-    width:70px;
-    height:70px;
-    border-radius:50%;
-    background: #fff;
-    box-shadow: 0px -2px 1px 2px rgb(207, 204, 204);
- 
+.ButtonIcon::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0px -2px 1px 2px rgb(207, 204, 204);
 }
- 
-.icon{
-    position: relative;
-    z-index: 2;
-    width:45px;
+
+.icon {
+  position: relative;
+  z-index: 2;
+  width: 35px;
 }
- 
+
+.scissors {
+  background: radial-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  box-shadow: 0px 2px 1px 2px rgb(218, 121, 42);
+  top: -40px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.paper {
+  background: radial-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  box-shadow: 0px 2px 1px 2px rgb(61, 97, 218);
+  right:-30px;
+  top: 20%;
+}
+
+.rock {
+  position: absolute;
+  background: radial-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  box-shadow: 0px 2px 1px 2px rgb(209, 56, 56);
+  bottom: -30px;
+  right: 0px;
+}
+
+.spock {
+  background: radial-gradient(hsl(189, 59%, 53%), hsl(189, 58%, 57%));
+  box-shadow: 0px 2px 1px 2px rgb(44, 127, 160);
+  left:-30px;
+  top: 20%;
+}
+
+.lizard {
+  background: radial-gradient(hsl(261, 73%, 60%), hsl(261, 72%, 63%));
+  box-shadow: 0px 2px 1px 2px hsl(261, 70%, 55%);
+  bottom: -30px;
+  left: 0px;
+}

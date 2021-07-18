@@ -1,11 +1,11 @@
 import React from 'react'
-import icon from "../../images/icon-lizard.svg"
+
 import "./buttonIcon.css"
 
-function ButtonIcon() {
+function ButtonIcon({dataType, icon}) {
     return (
-        <div className="ButtonIcon">
-            <img src={icon} alt="icon" className="icon"></img>
+        <div className={`ButtonIcon ${dataType}`}>
+            <img src={icon} alt="icon"  className="icon"></img>
         </div>
     )
 }

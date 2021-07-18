@@ -28,11 +28,12 @@
 }   
 
 .game-section{
+    position: relative;
     width: 250px;
-    height: 230px;
+    height: 250px;
     margin-top: 8rem;
     background:url(../images/bg-pentagon.svg) center no-repeat;
-    background-size: 230px 230px;
+    background-size: 250px 250px;
 }
 
 
