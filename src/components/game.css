@@ -8,7 +8,7 @@
 }
 .player-section {
   position: relative;
-  width: 50%;
+ 
   text-align: center;
 }
 
@@ -21,5 +21,28 @@
 .house-section {
   position: relative;
   text-align: center;
-  width: 50%;
+  
+}
+
+.result-container{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+}
+.result-container > p{
+  font-size: 3em;
+}
+
+.btn-play-again{
+  border: none;
+  padding:10px;
+  border-radius:5px;
+  color: hsl(229, 25%, 31%);
+  letter-spacing: 1.5px;
+  cursor: pointer;
+}
+
+.btn-play-again:hover{
+  background-color: white;
 }
