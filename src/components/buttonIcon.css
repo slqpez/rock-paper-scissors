@@ -1,6 +1,7 @@
 .ButtonIcon {
   position: absolute;
   border-radius: 50%;
+  border: none;
   width: 100px;
   height: 100px;
   z-index: 1;
@@ -11,12 +12,10 @@
   transition: transform 0.3s;
 }
 
-.ButtonIcon:hover{
-    transform: scale(.9);
-    box-shadow: 0px 0px 50px 0px #fff;
-   
+.ButtonIcon:hover {
+  transform: scale(0.9);
+  box-shadow: 0px 0px 50px 0px #fff;
 }
-
 
 .ButtonIcon::before {
   position: absolute;
@@ -25,10 +24,33 @@
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  background: #fff;
   box-shadow: 0px -2px 1px 2px rgb(207, 204, 204);
 }
 
+.ButtonIcon-paper::before {
+  background: #fff url("../../images/icon-paper.svg") no-repeat center;
+  background-size: 50%;
+}
+
+.ButtonIcon-rock::before {
+  background: #fff url("../../images/icon-rock.svg") no-repeat center;
+  background-size: 50%;
+}
+
+.ButtonIcon-scissors::before {
+  background: #fff url("../../images/icon-scissors.svg") no-repeat center;
+  background-size: 50%;
+}
+
+.ButtonIcon-lizard::before {
+  background: #fff url("../../images/icon-lizard.svg") no-repeat center;
+  background-size: 50%;
+}
+
+.ButtonIcon-spock::before {
+  background: #fff url("../../images/icon-spock.svg") no-repeat center;
+  background-size: 50%;
+}
 
 .icon {
   position: relative;
@@ -44,14 +66,14 @@
   transform: translate(-50%);
 }
 
-.scissors:hover{
-    transform: translate(-50%) scale(.9);
+.scissors:hover {
+  transform: translate(-50%) scale(0.9);
 }
 
 .paper {
   background: radial-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
   box-shadow: 0px 2px 1px 2px rgb(61, 97, 218);
-  right:-30px;
+  right: -30px;
   top: 20%;
 }
 
@@ -66,7 +88,7 @@
 .spock {
   background: radial-gradient(hsl(189, 59%, 53%), hsl(189, 58%, 57%));
   box-shadow: 0px 2px 1px 2px rgb(44, 127, 160);
-  left:-30px;
+  left: -30px;
   top: 20%;
 }
 
@@ -75,4 +97,17 @@
   box-shadow: 0px 2px 1px 2px hsl(261, 70%, 55%);
   bottom: -30px;
   left: 0px;
+}
+
+.trueButtonInGame {
+  position: static;
+  width: 180px;
+  height: 180px;
+  transform: translate(0);
+  pointer-events: none;
+}
+
+.trueButtonInGame::before {
+  width: 120px;
+  height: 120px;
 }

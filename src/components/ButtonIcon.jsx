@@ -1,13 +1,15 @@
-import React from 'react'
+import React from "react";
 
-import "./buttonIcon.css"
+import "./buttonIcon.css";
 
-function ButtonIcon({dataType, icon}) {
-    return (
-        <div className={`ButtonIcon ${dataType}`}>
-            <img src={icon} alt="icon"  className="icon"></img>
-        </div>
-    )
+function ButtonIcon({ dataType, handleSelection, isPlaying }) {
+  return (
+    <button
+      className={`ButtonIcon ButtonIcon-${dataType} ${dataType} ${isPlaying}ButtonInGame`}
+      onClick={handleSelection}
+      id={dataType}
+    ></button>
+  );
 }
 
-export default ButtonIcon
+export default ButtonIcon;
